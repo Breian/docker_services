@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  gateway:
+    ports:
+      - "5000:5001"
+    image: gateway_app
+  math:
+    ports:
+      - "5000"
+    image: math_app
+  string:
+    ports:
+        - "5002"
+    image: string_app
